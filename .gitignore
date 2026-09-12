@@ -1,0 +1,7 @@
+# 内核由 Actions 运行时下载, 不入库
+bin/
+# 运行时临时配置
+sub/_*.json
+*.pyc
+__pycache__/
+.DS_Store

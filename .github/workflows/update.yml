@@ -1,0 +1,57 @@
+name: auto-sub
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'          # UTC每6小时(北京 08:17/14:17/20:17/02:17)
+  workflow_dispatch: {}             # 允许手动点"Run workflow"
+  push:
+    branches: [ main ]
+    paths:                          # 只有脚本/配置变更才触发, 产出提交不回环
+      - 'scripts/**'
+      - 'config/**'
+      - '.github/workflows/**'
+
+permissions:
+  contents: write                   # 允许把新订阅 commit/push 回本仓库
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Xray-core
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq unzip curl
+          mkdir -p bin/xray
+          curl -L --retry 4 -o /tmp/xray.zip \
+            https://github.com/XTLS/Xray-core/releases/latest/download/Xray-linux-64.zip
+          unzip -o /tmp/xray.zip -d bin/xray
+          chmod +x bin/xray/xray
+          bin/xray/xray version || true
+
+      - name: Collect (抓取/解析/去重)
+        run: python3 scripts/collect.py
+
+      - name: Speedtest (TCP粗筛+Xray实测滤活)
+        run: python3 scripts/speedtest.py
+
+      - name: Commit & Push (回写新订阅)
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add sub
+          if git diff --cached --quiet; then
+            echo "本次无变化, 跳过提交"
+          else
+            git commit -m "auto-sub @ $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push
+          fi

@@ -1,0 +1,29 @@
+# ============================================================
+# 上游多节点源清单 (auto-sub)
+# 每行一个订阅URL; # 开头为注释; 空行忽略
+# 只放公开免费源, 严禁放任何带私人token/个人专属的订阅
+# GitHub raw 若 main 分支 404, collect.py 会自动尝试 master
+# 最后更新: 2026-09-12
+# ============================================================
+
+# --- free18/v2ray (高更新频率, 整体base64) ---
+https://raw.githubusercontent.com/free18/v2ray/main/v.txt
+
+# --- qmqv/jd01 (v2ray+clash, 整体base64) ---
+https://raw.githubusercontent.com/qmqv/jd01/main/v201-1010.txt
+
+# --- Pawdroid/Free-servers 19k星, 6小时更新 ---
+https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub
+
+# --- Au1rxx 已验证订阅(base64, 量大) ---
+https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/v2ray-base64.txt
+
+# --- Barabama/FreeNodes 爬虫聚合 ---
+https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/nodev2ray.txt
+https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/merged.txt
+
+# --- awesome-vpn 聚合(all为URI混合) ---
+https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/main/all
+
+# --- 周润发公益 (非GitHub, vless base64) ---
+https://d.zrfme.com/vless-base64

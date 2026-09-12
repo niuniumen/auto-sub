@@ -1,0 +1,14 @@
+{
+  "ts": "2026-09-12T02:37:46Z",
+  "sources_total": 8,
+  "sources_ok": 8,
+  "unique_nodes": 1100,
+  "by_proto": {
+    "vless": 679,
+    "trojan": 141,
+    "ss": 88,
+    "hy2": 186,
+    "hysteria2": 4,
+    "socks": 2
+  }
+}
