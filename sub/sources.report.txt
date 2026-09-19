@@ -1,8 +1,8 @@
   343  https://raw.githubusercontent.com/free18/v2ray/main/v.txt  
    11  https://raw.githubusercontent.com/qmqv/jd01/main/v201-1010.txt  
-    4  https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub  
-  910  https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/v2ray-base64.txt  
+    6  https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub  
+  871  https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/v2ray-base64.txt  
    11  https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/nodev2ray.txt  
    10  https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/merged.txt  
    33  https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/main/all  
-    1  https://d.zrfme.com/vless-base64  
+   31  https://d.zrfme.com/vless-base64  
