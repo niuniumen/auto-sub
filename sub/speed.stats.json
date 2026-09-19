@@ -1,51 +1,51 @@
 {
-  "ts": "2026-09-18T20:56:50Z",
-  "total": 1048,
-  "tcp_pass": 853,
+  "ts": "2026-09-19T04:39:52Z",
+  "total": 1288,
+  "tcp_pass": 1062,
   "xray_tested": 360,
-  "alive": 197,
-  "final": 141,
-  "cost_sec": 116,
+  "alive": 246,
+  "final": 139,
+  "cost_sec": 88,
   "top10": [
     {
-      "lat": 34,
-      "speed_MBs": 2.12
+      "lat": 77,
+      "speed_MBs": 2.62
     },
     {
-      "lat": 36,
-      "speed_MBs": 0.27
+      "lat": 80,
+      "speed_MBs": 1.42
     },
     {
-      "lat": 39,
-      "speed_MBs": 4.05
-    },
-    {
-      "lat": 40,
-      "speed_MBs": 2.1
-    },
-    {
-      "lat": 40,
-      "speed_MBs": 6.73
-    },
-    {
-      "lat": 41,
-      "speed_MBs": 2.6
-    },
-    {
-      "lat": 42,
-      "speed_MBs": 8.1
-    },
-    {
-      "lat": 42,
-      "speed_MBs": 7.55
-    },
-    {
-      "lat": 42,
+      "lat": 81,
       "speed_MBs": 2.56
     },
     {
-      "lat": 43,
-      "speed_MBs": 1.02
+      "lat": 81,
+      "speed_MBs": 0.0
+    },
+    {
+      "lat": 82,
+      "speed_MBs": 0.0
+    },
+    {
+      "lat": 82,
+      "speed_MBs": 5.68
+    },
+    {
+      "lat": 83,
+      "speed_MBs": 0.0
+    },
+    {
+      "lat": 83,
+      "speed_MBs": 0.0
+    },
+    {
+      "lat": 85,
+      "speed_MBs": 0.0
+    },
+    {
+      "lat": 86,
+      "speed_MBs": 0.0
     }
   ]
 }
