@@ -1,13 +1,13 @@
 {
-  "ts": "2026-09-30T05:33:25Z",
+  "ts": "2026-09-30T12:35:38Z",
   "sources_total": 8,
   "sources_ok": 8,
-  "unique_nodes": 1247,
+  "unique_nodes": 1284,
   "by_proto": {
-    "vless": 729,
-    "trojan": 165,
-    "ss": 136,
-    "hy2": 196,
+    "vless": 791,
+    "trojan": 169,
+    "ss": 120,
+    "hy2": 183,
     "hysteria2": 18,
     "socks": 3
   }
