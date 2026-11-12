@@ -1,12 +1,12 @@
 {
-  "ts": "2026-11-11T19:36:01Z",
+  "ts": "2026-11-12T07:10:35Z",
   "sources_total": 8,
   "sources_ok": 8,
-  "unique_nodes": 3384,
+  "unique_nodes": 3357,
   "by_proto": {
-    "vless": 2160,
-    "trojan": 329,
-    "ss": 407,
+    "vless": 2135,
+    "trojan": 328,
+    "ss": 406,
     "hy2": 163,
     "hysteria2": 305,
     "tuic": 2,
